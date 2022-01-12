@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>CodeClub Convert Money</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>CodeClub Convert Money</h1>
+    </div>
+    <div id="main">
+
+        <p class="select-input-label">converter <b>de</b></p>
+        <select>
+            <option>R$ Real Brasileiro
+            </option>
+        </select>
+        <p class="select-input-label">converter <b>para</b></p>
+        <select id="select">
+            <option>US$ Dólar Americano</option>
+            <option>€ Euro</option>
+        </select>
+        <p class="select-input-label"><b>Valor</b></p>
+        <input id="input" placeholder="R$ 10.000.00" type="number" />
+        <button id="button">Converter</button>
+
+        <div id="botton-container">
+            <div class="currency-container">
+                <img src="./img/brasil.png" />
+                <p class="currency-text">Real</p>
+                <p id="real-text-value" class="currency-value">10.000,00</p>
+            </div>
+            <img id="arrow" src="./img/arrow.png" />
+
+            <div class="currency-container">
+                <img id="currency-image" src="./img/eua.png" />
+                <p id="currency-text" class="currency-text">Dólar Americano</p>
+                <P id="currency-text-value" class="currency-value">US$ 2.000,00</P>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="scripts.js">
+</script>
+
+</html>
